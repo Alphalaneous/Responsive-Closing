@@ -16,7 +16,7 @@ HWND getWindowHandle() {
 class DummyAudio {
 	public:
 	void stopAudio(float dt) {
-		FMODAudioEngine::get()->stopAllMusic();
+		FMODAudioEngine::get()->stopAllMusic(true);
 	}
 };
 
