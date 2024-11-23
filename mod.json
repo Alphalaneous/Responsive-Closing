@@ -1,11 +1,11 @@
 {
-	"geode": "4.0.0-beta.1",
+	"geode": "4.0.1",
 	"gd": {
 		"win": "2.2074"
 	},
 	"id": "alphalaneous.responsive_closing",
 	"name": "Responsive Closing",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Alphalaneous",
 	"description": "Close the game immediately, save in background",
 	"links": {
