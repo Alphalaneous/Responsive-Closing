@@ -1,3 +1,4 @@
+
 #include <Geode/Geode.hpp>
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/modify/GameManager.hpp>
@@ -8,6 +9,7 @@ using namespace geode::prelude;
 
 LONG_PTR oWindowProc;
 bool isReloading = false;
+bool isSwitchingModes = false;
 
 HWND getWindowHandle() {
     return WindowFromDC(wglGetCurrentDC());
@@ -53,13 +55,17 @@ class $modify(MyGameManager, GameManager) {
 
     void reloadAll(bool switchingModes, bool toFullscreen, bool borderless, bool fix, bool unused) {
 		isReloading = true;
+		isSwitchingModes = switchingModes;
     	GameManager::reloadAll(switchingModes, toFullscreen, borderless, fix, unused);
 	}
 
 
 	void reloadAllStep5() {
 		GameManager::reloadAllStep5();
-		modifyWindowProc();
+		if (isSwitchingModes) {
+			modifyWindowProc();
+		}
+		isSwitchingModes = false;
 		isReloading = false;
 	}
 };

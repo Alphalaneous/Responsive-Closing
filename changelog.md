@@ -1,3 +1,6 @@
+# 1.0.3
+- Fix a crash when reloading textures.
+
 # 1.0.2
 - Fix audio cut out when switching to fullscreen and back.
 
