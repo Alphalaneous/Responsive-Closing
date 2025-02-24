@@ -1,3 +1,6 @@
+# 1.0.4
+- Add tags
+
 # 1.0.3
 - Fix a crash when reloading textures.
 

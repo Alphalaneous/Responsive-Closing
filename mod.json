@@ -1,16 +1,19 @@
 {
-	"geode": "4.0.1",
+	"geode": "4.2.0",
 	"gd": {
 		"win": "2.2074"
 	},
 	"id": "alphalaneous.responsive_closing",
 	"name": "Responsive Closing",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "Alphalaneous",
 	"description": "Close the game immediately, save in background",
 	"links": {
         "homepage": "https://linktr.ee/Alphalaneous",
         "source": "https://github.com/Alphalaneous/Responsive-Closing",
         "community": "https://discord.gg/Txn2CA5dHF"
-    }
+    },
+	"tags": [
+		"enhancement"
+	]
 }
