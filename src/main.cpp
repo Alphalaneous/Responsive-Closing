@@ -59,7 +59,6 @@ class $modify(MyGameManager, GameManager) {
     	GameManager::reloadAll(switchingModes, toFullscreen, borderless, fix, unused);
 	}
 
-
 	void reloadAllStep5() {
 		GameManager::reloadAllStep5();
 		if (isSwitchingModes) {
@@ -71,13 +70,10 @@ class $modify(MyGameManager, GameManager) {
 };
 
 class $modify(MyMenuLayer, MenuLayer) {
-
     void FLAlert_Clicked(FLAlertLayer* p0, bool p1) {
-		
 		if (p0->getTag() == 0 && p1) {
 			closing();
 		}
 		MenuLayer::FLAlert_Clicked(p0, p1);
 	}
-
 };
